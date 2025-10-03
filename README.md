@@ -4,4 +4,4 @@ Frontend is written in react.js
 <br/>
 Backend is written in Java Springboot
 <br/> 
-this is a college project and collective hardwork of 3 people.
+this is a college project and collective hardwork of a 3 people team.
