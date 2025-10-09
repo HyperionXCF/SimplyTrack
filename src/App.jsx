@@ -9,7 +9,11 @@ export default function App(){
   return(
     <div className="min-h-screen bg-slate-50 flex">
       <NavBar />
+<<<<<<< HEAD
+        <main className="p-6 flex-1 flex justify-center items-start bg-slate-50">
+=======
       <main className="p-6 flex-1">
+>>>>>>> 14c2809ba0bba3ae595f4f4ccf4c394fd862c1c5
         <Routes>
           <Route path="/todos" element={<Todos/>} />
           <Route path="/habits" element={<Habits/>} />
