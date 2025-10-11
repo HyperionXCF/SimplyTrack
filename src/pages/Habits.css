@@ -1,0 +1,385 @@
+
+.page {
+  width: 100%;
+  margin:0;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #191779;
+}
+
+.title p {
+  margin: 4px 0 0 0;
+  font-size: 1rem;
+  color: #395bc1;
+}
+
+
+.addBtn button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: #1156a5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.addBtn button:hover {
+  background: #005bcc;
+}
+
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+
+.details {
+  flex: 1;
+}
+
+
+.section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.section:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sectionTitle {
+  cursor: pointer;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.sectionTitle:hover {
+  text-decoration: underline;
+}
+
+.sectionButton {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sectionButton span {
+  font-size: 14px;
+  
+}
+
+.sectionButton .MarkBtn {
+  padding: 5px 10px;
+  border: none;
+  background:rgb(17, 240, 143);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.sectionButton .MarkBtn:hover {
+  background:rgb(52, 112, 207)
+}
+.sectionButton .delBtn{
+  font: size 1.2rem;
+
+}
+.sectionButton .delBtn:hover{
+  font-weight: 600;
+}
+
+
+.detailPanel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  border-left: 2px solid #ddd;
+  padding-left: 20px;
+  min-height: 600px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.detailPanel .Info {
+  padding:50px;
+  width:400px;
+  text-align: center;
+  border: 1px solid beige;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px rgb(231, 232, 237); 
+}
+
+.detailPanel h2 {
+  margin-top: 0;
+  color: #0d5bb3;
+  margin-bottom:3rem;
+  text-align: center;
+  font-size:1.5rem;
+  font-weight: 600;
+}
+
+
+.detailPanel p {
+  margin: 10px 0;
+  font-size:16px;
+  color: #444;
+}
+.streak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:8px;
+  transition: transform 0.2s ease-in-out;
+}
+.streak:hover {
+  transform: scale(1.05);
+}
+
+.streak::before {
+  content: "🔥";
+  font-size: 50px;
+}
+.closeBtn{
+  background-color: #e25068;
+  padding: 8px;
+  border-radius:10px;
+  color: white;
+}
+
+
+.popUpAdd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addhabitform {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  animation: popIn 0.3s ease;
+  
+}
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.addhabitform h2 {
+  margin-top:5px;
+  margin-bottom:15px;
+  padding:10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight:800;
+  color:#10478a;
+  
+}
+
+.addhabitform label {
+  display: block;
+  font-size: 15px;
+  margin: 8px 0 4px;
+  padding:5px;
+  font-weight:600;
+  color: #09274a;
+}
+
+.addhabitform input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.addhabitform input:hover{
+  box-shadow: 1px 1px 1px 1px rgb(27, 43, 63);
+}
+
+.addhabitform button {
+  padding: 6px 12px;
+  margin-top:30px;
+  text-align: center;
+  border: none;
+  margin-left:50px;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addhabitform button[type="submit"] {
+  background: #0077ff;
+  color: white;
+  font-weight: 600;
+}
+
+.addhabitform button[type="submit"]:hover {
+  background: #005bcc;
+
+}
+
+.addhabitform button[type="button"] {
+  background: #f2f2f2;
+  font-weight: 600;
+  
+}
+
+.addhabitform button[type="button"]:hover {
+  background: #ddd;
+}
+
+@media (max-width: 500px) {
+    .page {
+    padding: 15px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: left;
+
+  }
+
+  .title h1 {
+    font-size: 1.6rem;
+  }
+
+  .title p {
+    font-size: 0.9rem;
+  }
+
+  .addBtn button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+   
+  }
+
+  .content {
+    flex-direction: column;
+    gap:16px;
+  }
+  .section {
+    padding: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .sectionTitle {
+    font-size: 1rem;
+    
+  }
+
+  .sectionButton {
+    align-self: flex-end;
+  }
+
+  .detailPanel {
+    border-left: none;
+    border-top: 1px solid #eee;
+    padding: 20px;
+    height:100px;
+  }
+
+
+
+
+  .detailPanel .Info {
+    width:100%;
+    padding:10px;
+    font-size: 0.95rem;
+    
+  }
+
+  .addhabitform {
+    width: 90%;
+    padding: 18px;
+  }
+}
+
+
+@media (min-width:501px) and (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .detailPanel {
+    border-left: none;
+    border-top: 2px solid #ddd;
+   
+    padding-top: 25px;
+  }
+
+  .detailPanel .Info {
+    width: 80%;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-width: 993px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .detailPanel .Info {
+    width: 400px;
+  }
+}
